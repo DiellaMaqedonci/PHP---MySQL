@@ -1,5 +1,6 @@
 <?php
 
+//conditionals
     $num = 4;
 
     if($num > 0){
@@ -53,6 +54,7 @@
 
 
 
+//switch
     $season = 2;
 
     switch ($season) {
@@ -77,6 +79,60 @@
             break;
     }
     echo "<br><br>";
+    echo "<br><br>";
+
+
+//ora tjt
+//loops
+
+//while loop
+    $h = 10;
+    
+    while ($h <= 15) {
+        echo "The number is $h";
+        $h++;
+        echo "<br><br><br>";
+    }
+
+
+
+//do while
+    $z = 3;
+
+    do{
+        echo "The number is $z";
+        $z++;
+    }while($z >= 5);
+    echo "<br><br><br>";
+
+
+
+//for loop
+    for($le = 82; $le <= 100; $le++){
+        echo "The number is $le";
+        echo "<br>";
+    }
+    echo "<br><br>";
+
+
+
+//for each - only arrays
+    $brands = ["Bershka", "Stradivarius", "PULL&BEAR", "Brandy Melville", "Edikted."];
+
+    foreach ($brands as $value) {
+        echo "I shop at $value";
+        echo "<br><br>";
+    }
+    echo "<br><br>";
+
+
+    $age = array("John" => 18, "Michael" => 20, "Joe" => 13);
+
+    foreach($age as $key => $value){
+        echo "$key = $value  <br>";
+    }
+    
+
 
 
 
