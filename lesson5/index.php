@@ -31,5 +31,30 @@ for($i = 0; $i < 5; $i++){
     }
     echo "<br>";
 }
+echo "<br>";
+
+
+
+
+//Associative Arrays
+
+$playlist = array(
+     "Ariana Grande" => "7 Rings", 
+     "Adéla" => "Ain't in LA",
+     "Dua Lipa" => "Training Season"
+     );
+
+echo "My fav song of Adéla is: " . $playlist["Adéla"];
+echo "<br>";
+echo "<br>";
+
+foreach($playlist as $singer => $songs){
+    echo "Singer: " . $singer . ", Song: " . $songs;
+    echo "<br>";
+}
+
+
+
+
 
 ?>
