@@ -1,58 +1,35 @@
 <?php
 
-$host = 'localhost';
-$user = 'root';
-$db = 'db';
-$pass = '';
-
-
-try {
-
-    $conn = new PDO("mysql:host=$host;dbname=$db" , $user, $pass);
-
-    //CREATED NEW TABLE
-    //$sql = "CREATE TABLE CRUD(id INT(255) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-            //username VARCHAR(255) NOT NULL,
-            //password VARCHAR(255) NOT NULL)";
-
-    //$conn->exec($sql);
-
-    //echo "Table is Created";
-
-
-
-    //CREATED NEW COLUMN
-    // $username = "testname";
-    // $password = password_hash("12345678", PASSWORD_DEFAULT);
-
-    // $sql = "INSERT INTO test(username, password)  VALUES('$username', '$password')";
-
-    // $conn->exec($sql);
-
-    //echo "ISERTED";
-
-
-
-    //ALTER/CHANGE TABLE
-    //$sql = "ALTER TABLE test ADD email VARCHAR(255)";
-
-
-
-    //DELETE CHANGED TABLE
-    //$sql = "ALTER TABLE test DROP email";
-
-
-
-    //DELETE TABLE
-    $sql = "DROP TABLE crud";
-
-    $conn->exec($sql);
-
-    echo "altered";
-
-} catch (Exeption $e) {
-    echo "not connected".$e-getMessage();
-}
-
+    $username = $_GET['username'];
+    $password = $_GET['password'];
+    echo $username;
+    echo "<br>";
+    echo $password;
 
 ?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD/ Create Read Update Delete</title>
+</head>
+<body>
+
+    <form action="index.php" method="get">
+
+        <label for="username">Username: </label>
+        <input type="text" id="username" name="username" placeholder="Username"><br>
+        <label for="password">Password: </label>
+        <input type="text" id="password" name="password" placeholder="Password"><br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+    
+</body>
+</html>
