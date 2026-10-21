@@ -11,7 +11,7 @@
         <input type="text" name="name" placeholder="Name"><br>
         <input type="text" name="username" placeholder="Username"><br>
         <input type="email" name="email" placeholder="Email"><br>
-        <input type="submit" value="submit"><br>
+        <input type="submit" name="submit" value="submit"><br>
 
     </form>
     

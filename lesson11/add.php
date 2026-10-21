@@ -10,7 +10,7 @@
 
         $email = $_POST['email'];
 
-        $sql = "INSERT INTO user(name, username, email) VALUES(:name, :username, :email)";
+        $sql = "INSERT INTO user (name, username, email) VALUES(:name, :username, :email)";
 
         $sqlQuery = $conn->prepare($sql);
 
