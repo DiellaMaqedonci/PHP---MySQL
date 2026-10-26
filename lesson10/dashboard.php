@@ -7,20 +7,30 @@
 
     <style>
 
+        body{
+            background-color: lightblue;
+        }
+
         h1{
             font size: 30px;
             text-align: center;
             text-decoration: underline;
             text-decoration-color: pink;
+            color: purple;
         }
 
         table, td, th{
-            border: 1px solid black;
+            border: 1px solid pink;
             border-collapse: collapse;
+            color: purple;
         }
 
         td, th{
             padding: 10px 20px;
+        }
+
+        a{
+            color: purple;
         }
 
     </style>
@@ -61,6 +71,7 @@
                 <td><?= $user['name'] ?></td>
                 <td><?= $user['username'] ?></td>
                 <td><?= $user['email'] ?></td>
+                <td><?= "<a href='delete.php?id=$user[id]'> Delete </a> | <a href= 'edit.php?id=$user[id]'> Update </a> "?></td>
             </tr>
 
             <?php } ?>
