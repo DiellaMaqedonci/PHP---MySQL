@@ -8,7 +8,7 @@
     <style>
 
         body{
-            background-color: lightblue;
+            background-color: beige;
         }
 
         h1{

@@ -6,10 +6,9 @@
         $id = $_POST['id'];
         $username = $_POST['username'];
         $name = $_POST['name'];
-        $surname = $_POST['surname'];
         $email = $_POST['email'];
 
-        $sql = "UPDATE users SET username=:username, name=:name, email=:email WHERE id=:id ";
+        $sql = "UPDATE user SET username=:username, name=:name, email=:email WHERE id=:id ";
 
 
         $prep = $conn->prepare($sql);
