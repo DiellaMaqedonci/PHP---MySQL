@@ -4,19 +4,17 @@
 
     if(isset($_POST['submit'])){
 
-        $name = $_POST['name'];
-
-        $username = $_POST['username'];
-
         $email = $_POST['email'];
 
-        $sql = "INSERT INTO user (name, username, email) VALUES(:name, :username, :email)";
+        $password = $_POST['password'];
+
+        $sql = "INSERT INTO bootstrapexample ( email, password ) VALUES( :email, :password)";
 
         $sqlQuery = $conn->prepare($sql);
 
-        $sqlQuery->bindParam(':name', $name);
-        $sqlQuery->bindParam(':username', $username);
         $sqlQuery->bindParam(':email', $email);
+
+        $sqlQuery->bindParam(':password', $password);
 
         $sqlQuery->execute();
 
@@ -24,4 +22,8 @@
 
     }
 
-?>
+    ?>
+
+    <br><br><br>
+
+    <a href="dashboard.php">Go to Dashboard</a>
