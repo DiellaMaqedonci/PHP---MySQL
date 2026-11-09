@@ -57,7 +57,6 @@
                 <td><?= $user['id'] ?></td>
                 <td><?= $user['email'] ?></td>
                 <td><?= $user['password'] ?></td>
-                <!-- <td><?= "<a href='delete.php?id=$user[id]'> Delete </a> | <a href= 'edit.php?id=$user[id]'> Update </a> "?></td> -->
             </tr>
 
             <?php } ?>
@@ -65,7 +64,6 @@
 
     </table><br>
 
-    <!--<a href="index.php">Add users</a>-->
     
 </body>
 </html>
